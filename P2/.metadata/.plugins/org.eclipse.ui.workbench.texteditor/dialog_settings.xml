@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="" key="selection"/>
+		<item value="true" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="spendPoints"/>
+			<item value="addPoints"/>
+			<item value="100"/>
+			<item value="ctrlInit"/>
+			<item value="getPointsBalanceAsync"/>
+			<item value="~"/>
+			<item value="balanceView"/>
+			<item value="FOOD2_QUANTITY"/>
+			<item value="FOOD2_PRICE"/>
+			<item value="VALID_USER"/>
+			<item value="FOOD1_PRICE"/>
+			<item value="FOOD2_ID"/>
+			<item value="UNKNOWN_USER"/>
+			<item value="VALID_CC"/>
+			<item value="USER_POINTS"/>
+		</list>
+		<list key="replacehistory">
+			<item value="2"/>
+			<item value="1000"/>
+			<item value="&quot;sd.test@tecnico.ulisboa&quot;"/>
+			<item value="500"/>
+			<item value="&quot;Unknown@ist.utl&quot;"/>
+			<item value="&quot;4156321808160885&quot;"/>
+			<item value="getPointsBalance"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="336" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="454" key="DIALOG_HEIGHT"/>
+		<item value="1102" key="DIALOG_X_ORIGIN"/>
+		<item value="425" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

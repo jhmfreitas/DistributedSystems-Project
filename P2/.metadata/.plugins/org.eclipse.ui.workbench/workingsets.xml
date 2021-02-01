@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1556027949739_0" label="Java Main Sources" name="Java Main Sources">
+<item elementID="=cc-ws-cli/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=cc-ws-cli/target\/generated-sources\/wsimport" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=hub-ws/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=hub-ws/target\/generated-sources\/wsimport" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=hub-ws-cli/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=hub-ws-cli/target\/generated-sources\/wsimport" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=pts-ws/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=pts-ws/target\/generated-sources\/wsimport" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=pts-ws-cli/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=pts-ws-cli/target\/generated-sources\/wsimport" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=rst-ws/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=rst-ws/target\/generated-sources\/wsimport" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=rst-ws-cli/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=rst-ws-cli/target\/generated-sources\/wsimport" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=uddi-naming/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=uddi-naming/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1556027949759_1" label="Java Test Sources" name="Java Test Sources">
+<item elementID="=cc-ws-cli/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=cc-ws-cli/src\/test\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=hub-ws-cli/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=hub-ws-cli/src\/test\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=pts-ws-cli/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=pts-ws-cli/src\/test\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=rst-ws-cli/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=rst-ws-cli/src\/test\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=uddi-naming/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=uddi-naming/src\/test\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1556028574508_3" label="ForkExec" name="ForkExec">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/hub-ws" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/T22-ForkExec" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/uddi-naming" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/rst-ws-cli" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/rst-ws" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pts-ws" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pts-ws-cli" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/hub-ws-cli" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/cc-ws-cli" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1556027959294_2" label="Window Working Set" name="Aggregate for window 1556027959294"/>
+</workingSetManager>
