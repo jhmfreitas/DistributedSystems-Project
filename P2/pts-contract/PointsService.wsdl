@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  WSDL contract for ForkExec Points.
+  This WSDL defines the operations provided by the Web Service, and should not be modified.
+  For more information, see sections
+  wsdl:service, wsdl:portType, wsdl:types and wsdl:binding below
+-->
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://ws.pts.forkexec.com/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="PointsService" targetNamespace="http://ws.pts.forkexec.com/">
+
+  <!--  XML Schema Definition (XSD) of data types. -->
+  <types>
+    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ws.pts.forkexec.com/" version="1.0">
+      <xs:element name="BadInitFault" type="tns:BadInitFault" />
+      <xs:element name="EmailAlreadyExistsFault" type="tns:EmailAlreadyExistsFault" />
+      <xs:element name="InvalidEmailFault" type="tns:InvalidEmailFault" />
+      <xs:element name="InvalidPointsFault" type="tns:InvalidPointsFault" />
+      <xs:element name="NotEnoughBalanceFault" type="tns:NotEnoughBalanceFault" />
+      <xs:element name="activateUser" type="tns:activateUser" />
+      <xs:element name="activateUserResponse" type="tns:activateUserResponse" />
+      
+      
+      <xs:element name="ctrlClear" type="tns:ctrlClear" />
+      <xs:element name="ctrlClearResponse" type="tns:ctrlClearResponse" />
+      <xs:element name="ctrlInit" type="tns:ctrlInit" />
+      <xs:element name="ctrlInitResponse" type="tns:ctrlInitResponse" />
+      <xs:element name="ctrlPing" type="tns:ctrlPing" />
+      <xs:element name="ctrlPingResponse" type="tns:ctrlPingResponse" />
+      
+      
+      <xs:element name="getPointsBalance" type="tns:getPointsBalance" />
+      <xs:element name="getPointsBalanceResponse" type="tns:getPointsBalanceResponse" />
+      
+      <xs:element name="setPointsBalance" type="tns:setPointsBalance" />
+      <xs:element name="setPointsBalanceResponse" type="tns:setPointsBalanceResponse" />
+      
+      <xs:complexType name="ctrlClear">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="ctrlClearResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="InvalidEmailFault">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="message" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="InvalidPointsFault">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="message" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="activateUser">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="userEmail" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="activateUserResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="EmailAlreadyExistsFault">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="message" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getPointsBalance">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="userEmail" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="setPointsBalance">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="userEmail" type="xs:string" />
+          <xs:element minOccurs="0" name="value" type="xs:int" />
+          <xs:element minOccurs="0" name="tag" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getPointsBalanceResponse">
+        <xs:sequence>
+          <xs:element name="balanceView" type="tns:balanceView" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="setPointsBalanceResponse">
+        <xs:sequence>
+          <xs:element name="balanceView" type="tns:balanceView" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="balanceView">
+        <xs:sequence>
+          <xs:element name="value" type="xs:int" />
+          <xs:element name="tag" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ctrlPing">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="input" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ctrlPingResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ctrlInit">
+        <xs:sequence>
+          <xs:element name="startPoints" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ctrlInitResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="BadInitFault">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="message" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="NotEnoughBalanceFault">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="message" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </types>
+
+  <!--  Messages use elements defined in the schema. -->
+  <message name="ctrlPing">
+    <part element="tns:ctrlPing" name="parameters" />
+  </message>
+  <message name="ctrlPingResponse">
+    <part element="tns:ctrlPingResponse" name="parameters" />
+  </message>
+  <message name="getPointsBalance">
+    <part element="tns:getPointsBalance" name="parameters" />
+  </message>
+  <message name="setPointsBalance">
+    <part element="tns:setPointsBalance" name="parameters" />
+  </message>
+  <message name="getPointsBalanceResponse">
+    <part element="tns:getPointsBalanceResponse" name="parameters" />
+  </message>
+  <message name="setPointsBalanceResponse">
+    <part element="tns:setPointsBalanceResponse" name="parameters" />
+  </message>
+  <message name="InvalidEmailFault">
+    <part element="tns:InvalidEmailFault" name="fault" />
+  </message>
+  <message name="activateUser">
+    <part element="tns:activateUser" name="parameters" />
+  </message>
+  <message name="activateUserResponse">
+    <part element="tns:activateUserResponse" name="parameters" />
+  </message>
+  <message name="EmailAlreadyExistsFault">
+    <part element="tns:EmailAlreadyExistsFault" name="fault" />
+  </message>
+  <message name="ctrlInit">
+    <part element="tns:ctrlInit" name="parameters" />
+  </message>
+  <message name="ctrlInitResponse">
+    <part element="tns:ctrlInitResponse" name="parameters" />
+  </message>
+  <message name="BadInitFault">
+    <part element="tns:BadInitFault" name="fault" />
+  </message>
+  <message name="ctrlClear">
+    <part element="tns:ctrlClear" name="parameters" />
+  </message>
+  <message name="ctrlClearResponse">
+    <part element="tns:ctrlClearResponse" name="parameters" />
+  </message>
+  <message name="InvalidPointsFault">
+    <part element="tns:InvalidPointsFault" name="fault" />
+  </message>
+  <message name="NotEnoughBalanceFault">
+    <part element="tns:NotEnoughBalanceFault" name="fault" />
+  </message>
+
+  <!--  Port type (interface). -->
+  <!--  Each operation has input, output and fault messages. -->
+  <portType name="PointsPortType">
+    <operation name="ctrlPing">
+      <input message="tns:ctrlPing" wsam:Action="http://ws.pts.forkexec.com/PointsPortType/ctrlPingRequest" />
+      <output message="tns:ctrlPingResponse" wsam:Action="http://ws.pts.forkexec.com/PointsPortType/ctrlPingResponse" />
+    </operation>
+    <operation name="getPointsBalance">
+      <input message="tns:getPointsBalance" wsam:Action="http://ws.pts.forkexec.com/PointsPortType/getPointsBalanceRequest" />
+      <output message="tns:getPointsBalanceResponse" wsam:Action="http://ws.pts.forkexec.com/PointsPortType/getPointsBalanceResponse" />
+      <fault message="tns:InvalidEmailFault" name="InvalidEmailFault" wsam:Action="http://ws.pts.forkexec.com/PointsPortType/getPointsBalance/Fault/InvalidEmailFault" />
+    </operation>
+    <operation name="setPointsBalance">
+      <input message="tns:setPointsBalance" wsam:Action="http://ws.pts.forkexec.com/PointsPortType/setPointsBalanceRequest" />
+      <output message="tns:setPointsBalanceResponse" wsam:Action="http://ws.pts.forkexec.com/PointsPortType/setPointsBalanceResponse" />
+      <fault message="tns:InvalidEmailFault" name="InvalidEmailFault" wsam:Action="http://ws.pts.forkexec.com/PointsPortType/setPointsBalance/Fault/InvalidEmailFault" />
+      <fault message="tns:InvalidPointsFault" name="InvalidPointsFault" wsam:Action="http://ws.pts.forkexec.com/PointsPortType/setPointsBalance/Fault/InvalidPointsFault" />
+      <fault message="tns:NotEnoughBalanceFault" name="NotEnoughBalanceFault" wsam:Action="http://ws.pts.forkexec.com/PointsPortType/setPointsBalance/Fault/NotEnoughBalanceFault" />
+    </operation>
+    <operation name="activateUser">
+      <input message="tns:activateUser" wsam:Action="http://ws.pts.forkexec.com/PointsPortType/activateUserRequest" />
+      <output message="tns:activateUserResponse" wsam:Action="http://ws.pts.forkexec.com/PointsPortType/activateUserResponse" />
+      <fault message="tns:InvalidEmailFault" name="InvalidEmailFault" wsam:Action="http://ws.pts.forkexec.com/PointsPortType/activateUser/Fault/InvalidEmailFault" />
+      <fault message="tns:EmailAlreadyExistsFault" name="EmailAlreadyExistsFault" wsam:Action="http://ws.pts.forkexec.com/PointsPortType/activateUser/Fault/EmailAlreadyExistsFault" />
+    </operation>
+    <operation name="ctrlInit">
+      <input message="tns:ctrlInit" wsam:Action="http://ws.pts.forkexec.com/PointsPortType/ctrlInitRequest" />
+      <output message="tns:ctrlInitResponse" wsam:Action="http://ws.pts.forkexec.com/PointsPortType/ctrlInitResponse" />
+      <fault message="tns:BadInitFault" name="BadInitFault" wsam:Action="http://ws.pts.forkexec.com/PointsPortType/ctrlInit/Fault/BadInitFault" />
+    </operation>
+    <operation name="ctrlClear">
+      <input message="tns:ctrlClear" wsam:Action="http://ws.pts.forkexec.com/PointsPortType/ctrlClearRequest" />
+      <output message="tns:ctrlClearResponse" wsam:Action="http://ws.pts.forkexec.com/PointsPortType/ctrlClearResponse" />
+    </operation>
+  </portType>
+
+  <!--  Binding defines the actual technologies to use. -->
+  <binding name="PointsPortBinding" type="tns:PointsPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="ctrlPing">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getPointsBalance">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="InvalidEmailFault">
+        <soap:fault name="InvalidEmailFault" use="literal" />
+      </fault>
+    </operation>
+    <operation name="setPointsBalance">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="InvalidEmailFault">
+        <soap:fault name="InvalidEmailFault" use="literal" />
+      </fault>
+      <fault name="InvalidPointsFault">
+        <soap:fault name="InvalidPointsFault" use="literal" />
+      </fault>
+      <fault name="NotEnoughBalanceFault">
+        <soap:fault name="NotEnoughBalanceFault" use="literal" />
+      </fault>
+    </operation>
+    <operation name="activateUser">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="InvalidEmailFault">
+        <soap:fault name="InvalidEmailFault" use="literal" />
+      </fault>
+      <fault name="EmailAlreadyExistsFault">
+        <soap:fault name="EmailAlreadyExistsFault" use="literal" />
+      </fault>
+    </operation>
+    <operation name="ctrlInit">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BadInitFault">
+        <soap:fault name="BadInitFault" use="literal" />
+      </fault>
+    </operation>
+    <operation name="ctrlClear">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+
+  <!--  Service defines ports. -->
+  <!--  Each port is an abstract port type, made concrete by a binding. -->
+  <service name="PointsService">
+    <port binding="tns:PointsPortBinding" name="PointsPort">
+      <soap:address location="http://forkexec.com:8091/points" />
+    </port>
+  </service>
+</definitions>

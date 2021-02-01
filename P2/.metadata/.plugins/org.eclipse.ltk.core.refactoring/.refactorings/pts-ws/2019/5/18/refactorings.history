@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;com.forkexec.pts.domain.Points.startPoints&apos; in &apos;com.forkexec.pts.domain.Points&apos;&#x0D;&#x0A;- Original project: &apos;pts-ws&apos;&#x0D;&#x0A;- Original element: &apos;com.forkexec.pts.domain.Points.startPoints&apos;&#x0D;&#x0A;- Getter method name: &apos;getStartPoints&apos;&#x0D;&#x0A;- Setter method name: &apos;setStartPoints&apos;&#x0D;&#x0A;- Field visibility: &apos;public&apos;&#x0D;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;startPoints&apos;" flags="589830" getter="getStartPoints" id="org.eclipse.jdt.ui.self.encapsulate" input="/src\/main\/java&lt;com.forkexec.pts.domain{Points.java[Points^startPoints" insertion="9" setter="setStartPoints" stamp="1556733860005" version="1.0" visibility="1"/>
+</session>

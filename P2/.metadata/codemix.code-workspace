@@ -1,0 +1,23 @@
+{
+  "folders": [
+    
+  ],
+  "settings": {
+    "auto-close-tag.SublimeText3Mode": true,
+    "javascript.referencesCodeLens.enabled": false,
+    "editor.suggest.filterGraceful": false,
+    "typescript.implementationsCodeLens.enabled": false,
+    "editor.quickSuggestionsDelay": 200,
+    "typescript.referencesCodeLens.enabled": false,
+    "htmlhint.options": {
+      "attr-value-double-quotes": true,
+      "attr-no-duplication": true,
+      "tag-pair": true,
+      "spec-char-escape": true,
+      "id-unique": false,
+      "src-not-empty": true,
+      "title-require": true
+    },
+    "editor.detectIndentation": false
+  }
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.forkexec.pts.ws.SetPointsBalanceResponse"/>
+<fullyQualifiedTypeName name="com.forkexec.hub.domain.exceptions.PointsNotFoundException"/>
+<fullyQualifiedTypeName name="javax.jws.WebService"/>
+<fullyQualifiedTypeName name="com.forkexec.hub.ws.HubEndpointManager"/>
+<fullyQualifiedTypeName name="com.forkexec.pts.ws.GetPointsBalanceResponse"/>
+<fullyQualifiedTypeName name="com.forkexec.pts.ws.InvalidEmailFault_Exception"/>
+<fullyQualifiedTypeName name="com.forkexec.pts.ws.EmailAlreadyExistsFault_Exception"/>
+<fullyQualifiedTypeName name="java.util.regex.Pattern"/>
+<fullyQualifiedTypeName name="com.forkexec.pts.ws.BalanceView"/>
+<fullyQualifiedTypeName name="com.forkexec.hub.ws.BalanceView"/>
+<fullyQualifiedTypeName name="com.forkexec.pts.ws.cli.PointsClient"/>
+<fullyQualifiedTypeName name="com.forkexec.hub.domain.HubManager"/>
+<fullyQualifiedTypeName name="javax.xml.registry.infomodel.User"/>
+<fullyQualifiedTypeName name="org.junit.BeforeClass"/>
+<fullyQualifiedTypeName name="java.util.concurrent.atomic.AtomicInteger"/>
+</qualifiedTypeNameHistroy>
